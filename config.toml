@@ -3,7 +3,7 @@ name = "zambian-road-traffic-ai"
 
 [deployment]
 provider = "streamlit"
-mainFile = "app.py"
+mainFile = "streamlit_app.py"
 
 [environment]
 required = ["GROQ_API_KEY"]
