@@ -8,6 +8,7 @@ mainFile = "streamlit_app.py"
 # Deployment-ready options if main app fails:
 # Option 1: app_deploy.py (minimal dependencies)
 # Option 2: simple_app.py (basic functionality)
+# Option 3: app_basic.py (Streamlit only - guaranteed to work)
 
 [environment]
 required = ["GROQ_API_KEY"]
