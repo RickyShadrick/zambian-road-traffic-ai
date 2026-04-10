@@ -10,7 +10,7 @@ import sys
 
 def check_environment():
     """Check if environment is properly configured"""
-    print("🔍 Checking deployment environment...")
+    print("Checking deployment environment...")
     
     # Check if API key is set
     api_key = os.getenv("GROQ_API_KEY")

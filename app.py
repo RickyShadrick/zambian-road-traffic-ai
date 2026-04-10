@@ -101,12 +101,11 @@ def generate_answer(question, context):
 def main():
     st.set_page_config(
         page_title="Zambian Road Traffic AI Assistant",
-        page_icon="🚗",
         layout="wide"
     )
     
     # Header
-    st.title("🚗 Zambian Road Traffic & Vehicle Rights AI Assistant")
+    st.title("Zambian Road Traffic & Vehicle Rights AI Assistant")
     st.markdown("*Ask questions about road traffic laws, vehicle regulations, RSTA procedures, and driver rights based on official Zambian transportation documents*")
     
     # Sidebar with information
@@ -147,16 +146,16 @@ def main():
     st.header("Ask Your Road Traffic Question")
     
     # Example questions
-    with st.expander("📋 Example Road Traffic Questions"):
+    with st.expander("Example Road Traffic Questions"):
         col1, col2 = st.columns(2)
         with col1:
-            st.write("🎗️ What are the requirements for a driver's license?")
-            st.write("⚠️ What constitutes dangerous driving?")
-            st.write("🚗 What are vehicle registration requirements?")
+            st.write("What are the requirements for a driver's license?")
+            st.write("What constitutes dangerous driving?")
+            st.write("What are the vehicle registration requirements?")
         with col2:
-            st.write("💳 What are the fines for traffic violations?")
-            st.write("🔷 How do I appeal a traffic ticket?")
-            st.write("🚶 What are pedestrian rights on roads?")
+            st.write("What are the fines for traffic violations?")
+            st.write("How do I appeal a traffic ticket?")
+            st.write("What are the pedestrian rights on roads?")
     
     # Question input
     question = st.text_input(
@@ -166,7 +165,7 @@ def main():
     )
     
     # Search and answer button
-    if st.button("🚗 Get Traffic Law Answer", type="primary"):
+    if st.button("Get Traffic Law Answer", type="primary"):
         if not question.strip():
             st.warning("Please enter a question.")
             return
@@ -186,7 +185,7 @@ def main():
             is_relevant, check_message = check_answer_relevance(question, context, answer)
             
             # Display results
-            st.subheader("📜 Traffic Law Answer")
+            st.subheader("Traffic Law Answer")
             st.write(answer)
             
             # Show relevance check status
@@ -196,7 +195,7 @@ def main():
                 st.warning(f" Answer relevance: {check_message}")
             
             # Show context used
-            with st.expander("📄 Traffic Law Sources Used"):
+            with st.expander("Traffic Law Sources Used"):
                 st.text_area("Context", context, height=300, disabled=True)
     
     # Footer

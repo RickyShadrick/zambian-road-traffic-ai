@@ -1,11 +1,11 @@
-# 🚗 Deploy to Streamlit Cloud - Step by Step
+# Deploy to Streamlit Cloud - Step by Step
 
-## 📋 Prerequisites
+## Prerequisites
 - GitHub account
 - Groq API key
 - 15 minutes
 
-## 🚀 Quick Deploy Guide
+## Quick Deploy Guide
 
 ### Step 1: Prepare for GitHub
 ```bash
@@ -37,7 +37,7 @@ git push -u origin main
 - Your app will be live at: `https://yourusername-zambian-road-traffic-ai.streamlit.app`
 - Works on PC, phones, tablets!
 
-## 🔧 Alternative Deploy Options
+## Alternative Deploy Options
 
 ### Railway ($5/month)
 ```bash
@@ -50,23 +50,23 @@ web: streamlit run app.py --server.port $PORT --server.address 0.0.0.0
 - Vultr ($3.50/month)
 - Install nginx + streamlit
 
-## 📱 Mobile Optimization
-Your app is already mobile-friendly:
+## Mobile Optimization
+- Your app is already mobile-friendly:
 - Responsive design
 - Touch-friendly buttons
 - Works on all browsers
 
-## 🔐 Security Notes
+## Security Notes
 - Never commit real API key to GitHub
 - Use environment variables in production
 - Enable authentication if needed
 
-## 🎯 After Deployment
-Your app will be accessible worldwide:
-- 📱 Mobile phones
-- 💻 Desktop PCs  
-- 📟 Tablets
-- 🌐 Any browser
+## After Deployment
+- Your app will be accessible worldwide:
+- Mobile phones
+- Desktop PCs  
+- Tablets
+- Any browser
 
 Users can ask about:
 - Driver license requirements
