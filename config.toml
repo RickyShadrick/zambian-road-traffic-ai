@@ -3,12 +3,11 @@ name = "zambian-road-traffic-ai"
 
 [deployment]
 provider = "streamlit"
-mainFile = "streamlit_app.py"
+mainFile = "app_basic.py"
 
-# Deployment-ready options if main app fails:
-# Option 1: app_deploy.py (minimal dependencies)
-# Option 2: simple_app.py (basic functionality)
-# Option 3: app_basic.py (Streamlit only - guaranteed to work)
+# Fallback options if basic app fails:
+# Option 1: streamlit_app.py (full RAG functionality)
+# Option 2: app.py (original full version)
 
 [environment]
 required = ["GROQ_API_KEY"]
